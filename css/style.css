@@ -1,0 +1,355 @@
+/* font */
+@font-face {
+    font-family: Header;
+    src: url(../font/Fira_Sans/FiraSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: pragraph;
+    src: url(../font/Fira_Sans/FiraSans-Light.ttf)
+}
+
+@font-face {
+    font-family: pitlic;
+    src: url(../font/Fira_Sans/FiraSans-LightItalic.ttf)
+}
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Header, sans-serif;
+}
+
+/* Nav Bar  */
+.nav-bar {
+    top: 0;
+    left: 10px;
+    position: absolute;
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px 0px 5px 20px;
+    z-index: 3;
+
+}
+
+.nav-bar .n-btn {
+    color: #FFF;
+    text-decoration-line: none;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 7px 15px 7px 7px;
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.nav-bar a:hover {
+    color: #2FCD6E;
+}
+
+
+/* hear put dropdowm */
+
+
+
+/* continar */
+.continar
+{
+    width: 98.6vw;
+    display: grid;
+    grid-template-rows: repeat(8,100vh);
+    overflow: hidden;
+}
+
+
+/* hearde section */
+
+.header {
+    grid-row: 1/2;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../img/sitting-room/14.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.header .logo-text {
+    z-index: 2;
+}
+
+.header .logo-text h1 {
+    font-size: 8vw;
+    color:#fff;
+    margin: 0;
+    
+}
+.header .logo-text p {
+    font-size: 20px;
+    margin: 0; 
+    color: #f3f3f3;
+    font-family: pitlic;
+}
+
+.header .down-btn {
+    position: absolute;
+    bottom: 30px;
+    z-index: 2;
+    border-radius: 7px;
+}
+
+.header .down-btn i {
+    color: #FFF;
+}
+
+.header .bac-g-h {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 6%,rgba(0,0,0,0) 99%,rgba(0,0,0,0) 100%);
+    position: absolute;
+    z-index: 1; 
+}
+
+
+
+
+.bac-g {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(82, 72, 134, 0.678) 0%,rgba(0,0,0,0) 100%);
+    position: absolute;
+    z-index: 1; 
+}
+
+
+.descrption h1,
+.descrption p {
+    color: rgb(255, 255, 255);
+    left: 6%;
+    position: absolute;
+    z-index: 1;
+}
+
+.descrption h1 {
+    font-size: 7vw;
+    top: 20%;
+}
+.descrption p {
+    font-size: 18px;
+    font-weight: normal ;
+    font-family: pragraph;
+    top: 48%;
+    width: 50%;
+    text-align: justify;
+
+}
+.descrption .btn {
+    left: 6%;
+    top: 65%;
+    position: absolute;
+    z-index: 1;
+}
+
+.descrption .btn a {
+    background-color: #FFF;
+    padding: 15px 40px;
+    border-radius: 7px;
+    font-size: 25px;;
+    text-decoration-line: none;
+    color: #303030;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+    transition: .10s;
+}
+.descrption .btn a:hover {
+    background-color: #2FCD6E;
+    color:#FFF;   
+}
+
+.descrption .down-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    z-index: 2;
+    border-radius: 7px;
+}
+
+.descrption .down-btn i {
+    color: #FFF;
+}
+
+
+/* one section */
+.one
+{
+    grid-row: 2/3;
+    background-image: url(../img/sitting-room/39.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    align-items: center;
+    position: relative;
+   
+}
+
+
+/* two section */
+.two
+{
+    background-image: url(../img/bed-room/3.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    align-items: center;
+    position: relative;
+}
+
+
+/* Section Three  */
+.three
+{
+    grid-row: 4/5;
+    background-image: url(../img/Kitchen/22.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    align-items: center;
+    position: relative;
+}
+
+/* Section Fore */
+.four
+{
+    grid-row: 5/6;
+    background-image: url(../img/bathroom/13.jpg);
+    background-size: cover;
+    background-position: 60% 60%;
+    align-items: center;
+    position: relative;
+}
+/* section five */
+.five {
+    grid-row: 6/7;
+    background-image: url(../img/office/5.jpg);
+    background-size: cover;
+    background-position: 60% 50%;
+    align-items: center;
+    position: relative;
+}
+
+/* section five */
+.six {
+    grid-row: 7/8;
+    background-image: url(../img/kids-room/1.jpg);
+    background-size: cover;
+    background-position: 60% 50%;
+    align-items: center;
+    position: relative;
+}
+
+.seven {
+    grid-row: 8/9;
+    position: relative;
+}
+
+
+/* Start contact me */
+
+.contact-me {
+    
+    background-color: MediumSeaGreen;
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    height: 65%;
+}
+.contact-me .form { 
+    float: left; 
+    width: 45% 
+}
+.contact-me .contact-info {
+    float: left;
+    width: 40%;
+}
+.contact-me h3 { color:#FFF; text-transform: uppercase; font-size: 30px; }
+.contact-me .contact-info  { 
+    margin-left: 10%;
+    margin-top: 10%;
+    color: #FFF;
+    
+}
+.contact-me .contact-info span  { color: #fafafa }
+
+.contact-me .form label {
+    color: #FFF;
+    font-weight: bold;
+    display:block;
+    margin-top: 20px;
+}
+
+.contact-me .form input[type="text"]  {
+    background-color: #FaFaFa;
+    height: 25px;
+    width: 80%;
+    margin-top: 8px;
+    color: #303030;
+    padding: 5px;
+    border: 0;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+}
+
+.contact-me .form textarea {
+    background-color: #FaFaFa;
+    height: 150px;
+    width: 80%;
+    max-width: 80%;
+    margin-top: 8px;
+    color: #303030;
+    padding: 5px;
+    border: 0;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+}
+
+.contact-me .form input[type="submit"] {
+    display: block;
+    background-color: #FFF;
+    border-radius: 7px;
+    margin: 20px  0 40px 0;
+    color: #303030;
+    padding: 15px 30px;
+    border: 0;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+    transition: .17s;
+}
+
+.contact-me .form input[type="submit"]:hover {
+    background-color: #303030;
+    color: #FFF;
+
+}
+/* end contact me */ 
+
+
+/* start footer */
+
+
+.footer { 
+    background-color: #191f21;
+    padding: 50px 0 35px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #4b5456;
+    height: 35%;
+}
+
+
+.footer a {
+    
+    text-decoration: none;
+    color: #888;  
+}
+.footer a:hover { color: #2ecc71; }
+
+.footer ul { list-style: none; padding-left: 0; }
+.footer ul li { color: #4b5456; display: inline; margin:5px;}
+/* End footer */
+
